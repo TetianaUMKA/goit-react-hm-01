@@ -1,0 +1,50 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 8px;
+}
+
+.image {
+  margin: auto;
+  width: 300px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+}
+
+.mainInfo {
+  text-align: center;
+  padding: 20px;
+  margin: auto;
+  font-size: 36px;
+  color: #808080;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 48px;
+  color: #000000;
+}
+
+.statsList {
+  display: flex;
+}
+
+.statsItem {
+  text-align: center;
+  width: 200px;
+  height: 160px;
+  background-color: #d3d3d3;
+  border: 2px solid #808080;
+  border-bottom: transparent;
+}
+
+.span {
+  display: block;
+  font-size: 36px;
+}
+
+.spanData {
+  font-weight: 700;
+  font-size: 36px;
+}
