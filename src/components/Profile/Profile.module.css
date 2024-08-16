@@ -28,23 +28,23 @@
 
 .statsList {
   display: flex;
+  background-color: #d3d3d3;
+  border-top: 2px solid #808080;
+  border-radius: 0 0 4px 4px;
 }
 
 .statsItem {
   text-align: center;
   width: 200px;
   height: 160px;
-  background-color: #d3d3d3;
-  border: 2px solid #808080;
-  border-bottom: transparent;
 }
 
-.span {
+.label {
   display: block;
   font-size: 36px;
 }
 
-.spanData {
+.value {
   font-weight: 700;
   font-size: 36px;
 }
