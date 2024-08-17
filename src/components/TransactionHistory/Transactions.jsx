@@ -17,7 +17,7 @@ export default function Transactions({ items }) {
             className={`${css.data} ${index % 2 === 1 && css.darkBG}`}
             key={id}
           >
-            <td>{type}</td>
+            <td>{type[0].toUpperCase() + type.slice(1)}</td>
             <td>{amount}</td>
             <td>{currency}</td>
           </tr>
