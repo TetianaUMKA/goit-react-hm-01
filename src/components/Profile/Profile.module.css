@@ -6,7 +6,8 @@
 }
 
 .image {
-  margin: auto;
+  margin: 0 auto;
+  margin-bottom: 40px;
   width: 300px;
   background-color: #2a2a2a;
   border-radius: 50%;
@@ -14,8 +15,8 @@
 
 .mainInfo {
   text-align: center;
-  padding: 20px;
-  margin: auto;
+  padding: 40px;
+  margin: 0 auto;
   font-size: 36px;
   color: #808080;
 }
@@ -28,15 +29,22 @@
 
 .statsList {
   display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #d3d3d3;
   border-top: 2px solid #808080;
   border-radius: 0 0 4px 4px;
 }
 
 .statsItem {
+  padding: 20px;
   text-align: center;
-  width: 200px;
-  height: 160px;
+  width: calc(100% / 3);
+}
+
+.statsItemBorder {
+  border-right: 2px solid #808080;
+  border-left: 2px solid #808080;
 }
 
 .label {
