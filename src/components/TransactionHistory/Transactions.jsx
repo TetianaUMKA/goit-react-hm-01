@@ -1,8 +1,10 @@
+import css from "./Transactions.module.css";
+
 export default function Transactions({ items }) {
   return (
-    <table>
+    <table className={css.table}>
       <thead>
-        <tr>
+        <tr className={css.label}>
           <th>Type</th>
           <th>Amount</th>
           <th>Currency</th>
@@ -10,8 +12,11 @@ export default function Transactions({ items }) {
       </thead>
 
       <tbody>
-        {items.map(({ id, type, amount, currency }) => (
-          <tr key={id}>
+        {items.map(({ id, type, amount, currency }, index) => (
+          <tr
+            className={`${css.data} ${index % 2 === 1 && css.darkBG}`}
+            key={id}
+          >
             <td>{type}</td>
             <td>{amount}</td>
             <td>{currency}</td>
